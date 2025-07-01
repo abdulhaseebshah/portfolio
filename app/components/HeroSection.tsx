@@ -19,11 +19,11 @@ export default function HeroSection() {
           }
         </p>
         <Link
-            href="https://github.com/abdulhaseebshah"
-            className="inline-block group"
-          >
-            <Title text="View my Github ➡️" />
-          </Link>
+          href="https://github.com/abdulhaseebshah"
+          className="inline-block group"
+        >
+          <Title text="View my Github ➡️" />
+        </Link>
       </div>
       <div className="my-8 md:my-0 relative">
         <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative">
@@ -39,7 +39,9 @@ export default function HeroSection() {
         </div>
         <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
           <MovingBorderBtn borderRadius="0.5rem" className="p-3">
-            <Link href={"mailto:haseebwe5@gmail.com"}>📢 Available for Work</Link>
+            <Link href={"mailto:haseebwe5@gmail.com"}>
+              📢 Available for Work
+            </Link>
           </MovingBorderBtn>
         </div>
       </div>

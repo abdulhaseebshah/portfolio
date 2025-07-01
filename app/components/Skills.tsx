@@ -20,10 +20,6 @@ export default function Skills() {
       icon: SiJavascript,
     },
     {
-      text: "Typescript",
-      icon: SiTypescript,
-    },
-    {
       text: "React.js",
       icon: SiReact,
     },
@@ -34,10 +30,6 @@ export default function Skills() {
     {
       text: "React Router",
       icon: SiReactrouter,
-    },
-    {
-      text: "Redux",
-      icon: SiRedux,
     },
     {
       text: "HTML",
