@@ -48,7 +48,7 @@ export default function Skills() {
     <div className="max-w-5xl mx-auto">
       <Title
         text="Skills 🔪"
-        className="flex flex-col justify-center items-center -rotate-6"
+        className="flex flex-col justify-center items-center"
       />
       <HoverEffect items={skills} />
     </div>

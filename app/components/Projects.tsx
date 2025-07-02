@@ -3,11 +3,8 @@ import {
   SiAxios,
   SiCss3,
   SiHtml5,
-  SiJavascript,
-  SiNextdotjs,
   SiReact,
-  SiReactquery,
-  SiSupabase,
+  SiReactrouter,
   SiTailwindcss,
 } from "react-icons/si";
 import Title from "./Title";
@@ -22,11 +19,11 @@ const Projects = () => {
       tech: [SiReact, SiAxios, SiHtml5, SiTailwindcss],
       Link: "http://localhost:3000",
       cover: "/project-1.jpg",
-      background: "bg-indigo-500",
+      background: "bg-blue-500",
     },
     {
       title: "Movie App",
-      tech: [SiReact, SiAxios, SiHtml5, SiCss3],
+      tech: [SiReact, SiAxios, SiReactrouter, SiCss3],
       Link: "http://localhost:3000",
       cover: "/project-2.jpg",
       background: "bg-indigo-500",
@@ -37,10 +34,10 @@ const Projects = () => {
     <div className="py-10 p-5 sm:p-0">
       <Title
         text="Projects 🎨"
-        className="flex flex-col justify-center items-center -rotate-6"
+        className="flex flex-col justify-center items-center"
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 pt-16 gap-5">
         {projects.map((project, index) => {
           return (
             <Link href={project.Link} key={index}>

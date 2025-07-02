@@ -8,9 +8,6 @@ const page = () => {
       <div className="max-w-7xl mx-auto p-5">
         <Navbar />
       </div>
-      <div className="max-w-7xl mx-auto p-5 mt-20">
-        <Skills />
-      </div>
     </div>
   );
 };
