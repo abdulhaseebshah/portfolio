@@ -1,7 +1,6 @@
 import React from "react";
 import Skills from "../components/Skills";
 import Navbar from "../components/Navbar";
-import Projects from "../components/Projects";
 
 const page = () => {
   return (
@@ -11,7 +10,6 @@ const page = () => {
       </div>
       <div className="max-w-7xl mx-auto p-5 mt-20">
         <Skills />
-        <Projects />
       </div>
     </div>
   );
