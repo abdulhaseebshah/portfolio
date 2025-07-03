@@ -19,19 +19,19 @@ const Projects = () => {
       tech: [SiReact, SiAxios, SiHtml5, SiTailwindcss],
       Link: "http://localhost:3000",
       cover: "/project-1.jpg",
-      background: "bg-blue-500",
+      background: "bg-gradient-to-t from-gray-400 to-black",
     },
     {
       title: "Movie App",
       tech: [SiReact, SiAxios, SiReactrouter, SiCss3],
       Link: "http://localhost:3000",
       cover: "/project-2.jpg",
-      background: "bg-indigo-500",
+      background: "bg-gradient-to-t from-gray-400 to-black",
     },
   ];
 
   return (
-    <div className="py-10 p-5 sm:p-0">
+    <div className="py-10 p-5 sm:p-0 ">
       <Title
         text="Projects 🎨"
         className="flex flex-col justify-center items-center"
@@ -41,7 +41,7 @@ const Projects = () => {
         {projects.map((project, index) => {
           return (
             <Link href={project.Link} key={index}>
-              <div className={cn("p-5 rounded-md", project.background)}>
+              <div className={cn("p-2 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"
