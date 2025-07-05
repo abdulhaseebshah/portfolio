@@ -3,10 +3,12 @@ import {
   SiAxios,
   SiCss3,
   SiHtml5,
+  SiJavascript,
   SiReact,
   SiReactrouter,
   SiTailwindcss,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 import Title from "./Title";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -15,18 +17,22 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 const Projects = () => {
   const projects = [
     {
-      title: "Real-Time Weather Forecast App",
-      tech: [SiReact, SiAxios, SiHtml5, SiTailwindcss],
-      Link: "http://localhost:3000",
-      cover: "/project-1.jpg",
-      background: "bg-gradient-to-t from-gray-400 to-black",
-    },
-    {
       title: "Movie App",
       tech: [SiReact, SiAxios, SiReactrouter, SiCss3],
       Link: "http://localhost:3000",
+      cover: "/project-1.jpg",
+    },
+    {
+      title: "Real-Time Weather Forecast App",
+      tech: [SiReact, SiAxios, SiHtml5, SiTailwindcss],
+      Link: "http://localhost:3000",
       cover: "/project-2.jpg",
-      background: "bg-gradient-to-t from-gray-400 to-black",
+    },
+    {
+      title: "Random Quote Generator",
+      tech: [SiReact, TbApi, SiJavascript, SiCss3],
+      Link: "http://localhost:3000",
+      cover: "/project-3.jpg",
     },
   ];
 
@@ -41,7 +47,11 @@ const Projects = () => {
         {projects.map((project, index) => {
           return (
             <Link href={project.Link} key={index}>
-              <div className={cn("p-2 rounded-md", project.background)}>
+              <div
+                className={cn(
+                  "p-2 rounded-md bg-gradient-to-t from-gray-400/30 to-black/10"
+                )}
+              >
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"
