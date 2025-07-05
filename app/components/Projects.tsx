@@ -1,41 +1,12 @@
 import React from "react";
-import {
-  SiAxios,
-  SiCss3,
-  SiHtml5,
-  SiJavascript,
-  SiReact,
-  SiReactrouter,
-  SiTailwindcss,
-} from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+
 import Title from "./Title";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
+import { projects } from "@/public/data";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Movie App",
-      tech: [SiReact, SiAxios, SiReactrouter, SiCss3],
-      Link: "http://localhost:3000",
-      cover: "/project-1.jpg",
-    },
-    {
-      title: "Real-Time Weather Forecast App",
-      tech: [SiReact, SiAxios, SiHtml5, SiTailwindcss],
-      Link: "http://localhost:3000",
-      cover: "/project-2.jpg",
-    },
-    {
-      title: "Random Quote Generator",
-      tech: [SiReact, TbApi, SiJavascript, SiCss3],
-      Link: "http://localhost:3000",
-      cover: "/project-3.jpg",
-    },
-  ];
-
   return (
     <div className="py-10 p-5 sm:p-0 ">
       <Title
@@ -46,7 +17,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-16 gap-5">
         {projects.map((project, index) => {
           return (
-            <Link href={project.Link} key={index}>
+            <Link href={`/projects/${project.projectId}`} key={index}>
               <div
                 className={cn(
                   "p-2 rounded-md bg-gradient-to-t from-gray-400/30 to-black/10"
