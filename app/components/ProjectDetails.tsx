@@ -23,13 +23,13 @@ const ProjectDetails = ({ projectId }: Props) => {
   return (
     <div className="p-0 sm:p-5">
       <div className="border-b border-gray-700 pb-5 mb-10 flex items-center gap-6">
-        <h2 className="text-4xl font-bold">{project.title}</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">{project.title}</h2>
       </div>
       <div className="grid grid-cols-1 my-10">
         <img
           src={project.cover}
           alt={project.title}
-          className="w-full  mx-auto rounded-lg shadow-lg"
+          className="w-full mx-auto rounded-lg shadow-lg"
         />
       </div>
       <div className="mt-4 space-y-4">
@@ -57,7 +57,7 @@ const ProjectDetails = ({ projectId }: Props) => {
         </p>
 
         <h3 className="text-3xl font-bold text-indigo-500">Skills</h3>
-        <div className="border-l-4 p-6 flex items-center gap-4 mt-4">
+        <div className="border-l-4 p-6 flex flex-wrap items-center gap-4 mt-4">
           {project.skills.map((skill) => (
             <div className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group">
               {skill}
