@@ -1,6 +1,6 @@
 import React from "react";
-import Skills from "../components/Skills";
 import Navbar from "../components/Navbar";
+import Skills from "../components/Skills";
 
 const page = () => {
   return (
@@ -33,7 +33,6 @@ const page = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto p-5 mt-20">
-        {/* Tabs */}
         <Skills />
       </div>
     </div>
