@@ -1,6 +1,8 @@
 import {
   SiAxios,
   SiCss3,
+  SiGit,
+  SiGithub,
   SiHtml5,
   SiJavascript,
   SiNextdotjs,
@@ -87,5 +89,9 @@ export const skills = [
   {
     text: "Tailwind",
     icon: SiTailwindcss,
+  },
+  {
+    text: "GitHub",
+    icon: SiGithub,
   },
 ];
