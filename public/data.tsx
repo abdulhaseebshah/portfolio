@@ -13,7 +13,7 @@ import { TbApi } from "react-icons/tb";
 export const projects = [
   {
     projectId: 1,
-    title: "Netlyfy - Movie App",
+    title: "Netttflix - Movie App",
     description:
       "A movie browsing app inspired by IMDb, powered by The Movie Database (TMDB) API. Discover trending movies, view detailed information, and navigate seamlessly with a clean UI built using React, Axios, and React Router.",
     tech: [SiReact, SiAxios, SiReactrouter, SiCss3],

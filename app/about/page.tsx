@@ -32,7 +32,7 @@ const page = () => {
             target="_blank"
             className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group w-fit"
           >
-            Visit Live
+            Download CV
             <FiArrowUpRight className="h-5 w-5 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300" />
           </Link>
         </div>
