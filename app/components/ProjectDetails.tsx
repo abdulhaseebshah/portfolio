@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "@/public/data";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import Image from "next/image";
 
 type Props = {
   projectId: string;
@@ -26,7 +27,7 @@ const ProjectDetails = ({ projectId }: Props) => {
         <h2 className="text-3xl md:text-4xl font-bold">{project.title}</h2>
       </div>
       <div className="grid grid-cols-1 my-10">
-        <img
+        <Image
           src={project.cover}
           alt={project.title}
           className="w-full mx-auto rounded-lg shadow-lg"
@@ -59,7 +60,7 @@ const ProjectDetails = ({ projectId }: Props) => {
         <h3 className="text-3xl font-bold text-indigo-500">Skills</h3>
         <div className="border-l-4 p-6 flex flex-wrap items-center gap-4 mt-4">
           {project.skills.map((skill) => (
-            <div className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group">
+            <div key={skill} className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group">
               {skill}
             </div>
           ))}

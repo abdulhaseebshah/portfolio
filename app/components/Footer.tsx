@@ -26,9 +26,9 @@ const Footer = () => {
     <div className="max-w-7xl mx-auto p-5 border-t border-gray-200 dark:border-gray-700 mt-10">
       <div className="flex flex-col gap-6 lg:flex-row  justify-between">
         <div>
-          <h4 className="text-xl font-bold pb-2 ">Hello, I'm Abdul!</h4>
+          <h4 className="text-xl font-bold pb-2 ">Hello, I&rsquo;m Abdul!</h4>
           <p className="lg:max-w-[80%] text-gray-400">
-            I'm a Frontend Developer with a strong eye for detail and a passion
+            I&rsquo;m a Frontend Developer with a strong eye for detail and a passion
             for accessibility. I bring a well-rounded skill set, including
             design expertise, task management, and problem-solving abilities.
           </p>
@@ -37,7 +37,7 @@ const Footer = () => {
           <h4 className="text-xl font-bold pb-2"> Follow my coding journey</h4>
           <p className="lg:max-w-[80%] text-gray-400">
             I regularly share my latest projects and learning milestones on my
-            social accounts. You can find me on LinkedIn and GitHub. If you'd
+            social accounts. You can find me on LinkedIn and GitHub. If you&rsquo;d
             like to get in touch, feel free to send me an email.
           </p>
         </div>
