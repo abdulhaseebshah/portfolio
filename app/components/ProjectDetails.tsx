@@ -31,6 +31,8 @@ const ProjectDetails = ({ projectId }: Props) => {
           src={project.cover}
           alt={project.title}
           className="w-full mx-auto rounded-lg shadow-lg"
+          width={1920}
+          height={1080}
         />
       </div>
       <div className="mt-4 space-y-4">
@@ -60,7 +62,10 @@ const ProjectDetails = ({ projectId }: Props) => {
         <h3 className="text-3xl font-bold text-indigo-500">Skills</h3>
         <div className="border-l-4 p-6 flex flex-wrap items-center gap-4 mt-4">
           {project.skills.map((skill) => (
-            <div key={skill} className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group">
+            <div
+              key={skill}
+              className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group"
+            >
               {skill}
             </div>
           ))}

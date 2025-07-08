@@ -29,7 +29,7 @@ const page = () => {
             accessible, and responsive design.
           </p>
           <Link
-            href={""}
+            href={"./Resume-Abdul-Haseeb.pdf"}
             target="_blank"
             className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group w-fit"
           >
@@ -38,11 +38,7 @@ const page = () => {
           </Link>
         </div>
         <div className="max-w-[400px] w-full">
-          <Image
-            src="./abdul-profile.png"
-            alt="abdul-profile"
-            className="w-full"
-          />
+          <Image src="/abdul-profile.png" alt="Profile" width={400} height={400} />
         </div>
       </div>
       <div className="max-w-7xl mx-auto p-5 mt-20">
