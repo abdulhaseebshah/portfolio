@@ -1,6 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
+import Education from "../components/Education";
+import Experience from "../components/Experience";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const page = () => {
   return (
@@ -23,6 +27,14 @@ const page = () => {
             (ES6 & Async), React, Next, and more - always with a focus on clean,
             accessible, and responsive design.
           </p>
+          <Link
+            href={""}
+            target="_blank"
+            className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group w-fit"
+          >
+            Visit Live
+            <FiArrowUpRight className="h-5 w-5 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300" />
+          </Link>
         </div>
         <div className="max-w-[400px] w-full">
           <img
@@ -34,6 +46,8 @@ const page = () => {
       </div>
       <div className="max-w-7xl mx-auto p-5 mt-20">
         <Skills />
+        <Experience />
+        <Education />
       </div>
     </div>
   );

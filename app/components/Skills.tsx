@@ -6,7 +6,7 @@ import { skills } from "@/public/data";
 export default function Skills() {
   return (
     <div className="max-w-7xl mx-auto">
-      <Title text="Skills 🔪" className="flex flex-col items-center -rotate-6" />
+      <h3 className="text-4xl font-bold">Skills</h3>
       <HoverEffect items={skills} />
     </div>
   );
