@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Experience = () => {
   return (
-    <div className="max-w-7xl mx-auto my-10">
+    <div className="max-w-7xl mx-auto">
       <h3 className="text-4xl font-bold pb-4">Experience</h3>
       <div className="mt-2 space-y-4">
         <p className="lg:border-l-4 text-lg lg:p-4 lg:px-5 lg:ml-6">

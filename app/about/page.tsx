@@ -6,6 +6,7 @@ import Experience from "../components/Experience";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 const page = () => {
   return (
@@ -46,6 +47,7 @@ const page = () => {
         <Experience />
         <Education />
       </div>
+      <Footer />
     </div>
   );
 };

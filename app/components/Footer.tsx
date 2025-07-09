@@ -42,9 +42,9 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center sm:justify-between pt-10">
-        <p>All rights reserved. © 2025 Abdul Haseeb. </p>
-        <div className="flex items-center gap-5">
+      <div className="flex flex-col sm:flex-row gap-4 lg:gap-14 justify-center items-center sm:justify-between pt-10">
+        <p className="lg:w-full">All rights reserved. © 2025 Abdul Haseeb. </p>
+        <div className="lg:w-full flex items-center gap-5">
           {socials.map((item, index) => {
             const Icon = item.Icon;
             return (

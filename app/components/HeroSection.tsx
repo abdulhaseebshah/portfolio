@@ -22,7 +22,7 @@ export default function HeroSection() {
           href="https://github.com/abdulhaseebshah"
           className="inline-block group"
         >
-          <Title text="View my Github ➡️" />
+          <Title fontSize="text-2xl" width="w-48" text="View my Github ➡️" />
         </Link>
       </div>
       <div className="my-8 md:my-0 relative">

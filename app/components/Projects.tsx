@@ -11,6 +11,7 @@ const Projects = () => {
     <div className="py-10 p-5 sm:p-0 ">
       <Title
         text="Projects 🎨"
+        width="w-44"
         className="flex flex-col justify-center items-center"
       />
 
