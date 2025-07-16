@@ -30,7 +30,7 @@ const page = () => {
             accessible, and responsive design.
           </p>
           <Link
-            href={"./Resume-Abdul-Haseeb.pdf"}
+            href={"https://drive.google.com/file/d/1ly3wUL3takrA07Rq6tiYFmECgZHk0sMs/view?usp=sharing"}
             target="_blank"
             className="bg-white text-black py-3 px-4 font-medium rounded-lg flex items-center gap-1 group w-fit"
           >
