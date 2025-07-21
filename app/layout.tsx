@@ -12,6 +12,34 @@ export const metadata: Metadata = {
     "I'm Abdul Haseeb, a front-end developer based in Nashik, Maharashtra. I build modern, responsive, and accessible websites using React.js, Next.js, and Tailwind CSS.",
   keywords:
     "Abdul Haseeb, frontend developer Nashik, React developer Maharashtra, Next.js developer India, web developer in India, JavaScript developer, portfolio developer",
+
+  openGraph: {
+    title:
+      "Abdul Haseeb | Front-End Developer in Nashik, India | React & Next.js Expert",
+    description:
+      "I'm Abdul Haseeb, a front-end developer based in Nashik, Maharashtra. I build modern, responsive, and accessible websites using React.js, Next.js, and Tailwind CSS.",
+    url: "https://abdulhaseebshah.vercel.app",
+    siteName: "Abdul Haseeb Portfolio",
+    images: [
+      {
+        url: "https://abdulhaseebshah.vercel.app/og-image.jpg", // Must be a full URL
+        width: 1200,
+        height: 630,
+        alt: "Abdul Haseeb | Front-End Developer",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdul Haseeb | Front-End Developer in Nashik, India",
+    description:
+      "Building responsive, fast and accessible websites using React, Next.js and Tailwind CSS.",
+    images: ["https://abdulhaseebshah.vercel.app/og-image.jpg"],
+    creator: "@abdulhaseeb26",
+  },
 };
 
 export default function RootLayout({
